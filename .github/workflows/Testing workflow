@@ -1,0 +1,11 @@
+name: Testing Workflow to print
+
+    on: [push]
+
+    jobs:
+      build:
+        name: TestingWorkflow
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
